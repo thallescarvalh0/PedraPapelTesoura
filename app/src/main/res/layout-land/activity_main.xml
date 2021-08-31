@@ -92,21 +92,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/layoutJogador2"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:id="@+id/tvJogador2"
-                android:text="@string/op_jogador_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:textSize="14sp"/>
+                android:text="@string/op_jogador_2"
+                android:textSize="14sp" />
 
             <ImageView
+                android:id="@+id/btnJogador2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:id="@+id/btnJogador2"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:layout_marginLeft="180dp"/>
 
         </LinearLayout>
 
@@ -114,12 +115,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/layoutJogador3"
-            android:orientation="vertical"
-            android:layout_marginBottom="40dp">
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tvJogador3"
                 android:text="@string/op_jogador_3"
                 android:layout_marginTop="25dp"
@@ -129,7 +130,8 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:id="@+id/btnJogador3"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:layout_marginLeft="180dp"/>
 
         </LinearLayout>
 

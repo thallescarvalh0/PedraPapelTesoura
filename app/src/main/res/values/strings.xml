@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PedraPapelTesoura</string>
+    <string name="resultado">Resultado:</string>
+    <string name="op_jogador_3">Opção jogador 3:</string>
+    <string name="op_jogador_2">Opção jogador 2:</string>
+    <string name="op_o_para_jogar">Selecione uma opção para jogar:</string>
+    <string name="tres_jogadores">Três Jogadores</string>
+    <string name="dois_jogadores">Dois Jogadores</string>
+    <string name="qtde_de_jogadores">Selecione a quantidade de jogadores</string>
 </resources>
