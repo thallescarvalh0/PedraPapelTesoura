@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-
-import java.util.Objects;
 import java.util.Random;
 
 import br.edu.ifsp.scl.sdm.pedrapapeltesoura.databinding.ActivityMainBinding;
@@ -94,47 +92,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (jogada == jogadaComputador2){
             resultadoVs = 1;
-            resultadoSb = "EMPATE";
+            resultadoSb = "Resultado: EMPATE";
         }
         else if((jogada - jogadaComputador2 == -2) || (jogada - jogadaComputador2 == 1)) {
             resultadoVs = 2;
-            resultadoSb = "GANHOU";
+            resultadoSb = "Resultado: GANHOU";
         }else{
             resultadoVs = 3;
-            resultadoSb = "PERDEU";
+            resultadoSb = "Resultado: PERDEU";
         }
 
         if (jogadores == 3) {
             switch (resultadoVs){
                 case 1 ://empate
                     if (jogadaComputador2 == jogadaComputador3) {
-                        resultadoSb = "EMPATE";
+                        resultadoSb = "Resultado: EMPATE";
                     }else if(((jogadaComputador2 - jogadaComputador3 == -2)
                             || (jogadaComputador2 - jogadaComputador3 == 1))
                             && ((jogada - jogadaComputador3 == -2) || (jogada - jogadaComputador3 == 1))){
-                        resultadoSb = "EMPATE";
+                        resultadoSb = "Resultado: EMPATE";
                     }else if ((jogada - jogadaComputador3 != -2) || (jogada - jogadaComputador3 != 1)){
-                        resultadoSb = "PERDEU";
+                        resultadoSb = "Resultado: PERDEU";
                     }
                     break;
                 case 2: //ganhou
                     if (jogadaComputador2 == jogadaComputador3)
-                        resultadoSb = "GANHOU";
+                        resultadoSb = "Resultado: GANHOU";
                     else if(((jogadaComputador2 - jogadaComputador3 == -2)
                             || (jogadaComputador2 - jogadaComputador3 == 1))
                             &&((jogada - jogadaComputador3 == -2) || (jogada - jogadaComputador3 == 1)))
-                        resultadoSb = "GANHOU";
+                        resultadoSb = "Resultado: GANHOU";
                     else
-                        resultadoSb = "EMPATE";
+                        resultadoSb = "Resultado: EMPATE";
 
                     break;
                 case 3: // perdeu
                     if (jogadaComputador2 == jogadaComputador3)
-                        resultadoSb = "PERDEU";
+                        resultadoSb = "Resultado: PERDEU";
                     else if((jogadaComputador2 - jogadaComputador3 == -2) || (jogadaComputador2 - jogadaComputador3 == 1))
-                        resultadoSb = "PERDEU";
+                        resultadoSb = "Resultado: PERDEU";
                     else
-                        resultadoSb = "EMPATE";
+                        resultadoSb = "Resultado: EMPATE";
 
                     break;
             }
