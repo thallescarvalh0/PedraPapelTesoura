@@ -11,35 +11,6 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/tvSelecioneJogadores"
-            android:text="@string/qtde_de_jogadores"
-            android:layout_marginBottom="5dp"
-            android:textSize="14sp"/>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/rgJogadores"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/rbDoisJogadores"
-                android:text="@string/dois_jogadores"
-                android:layout_weight="1" />
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/rbTresJogadores"
-                android:text="@string/tres_jogadores"
-                android:layout_weight="1"/>
-        </RadioGroup>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -61,24 +32,24 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/btnPedra"
                     android:layout_weight="1"
                     android:src="@mipmap/pedra"
                     android:layout_gravity="center" />
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/btnPapel"
                     android:layout_weight="1"
                     android:src="@mipmap/papel"
                     android:layout_gravity="center|fill"/>
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:id="@+id/btnTesoura"
                     android:layout_weight="1"
                     android:src="@mipmap/tesoura"
@@ -91,53 +62,70 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/layoutJogador2"
-            android:orientation="vertical">
+            android:id="@+id/layoutGeral"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tvJogador2"
-                android:text="@string/op_jogador_2"
-                android:layout_marginTop="25dp"
-                android:textSize="14sp"/>
+            <LinearLayout
+                android:id="@+id/layoutJogador2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/btnJogador2"
-                android:layout_gravity="center" />
+                <ImageView
+                    android:id="@+id/btnJogador2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
 
+                <TextView
+                    android:id="@+id/tvJogador2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/op_jogador_2"
+                    android:textSize="14sp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutJogador3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btnJogador3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvJogador3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/op_jogador_3"
+                    android:textSize="14sp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/layoutJogador3"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tvJogador3"
-                android:text="@string/op_jogador_3"
-                android:layout_marginTop="25dp"
-                android:textSize="14sp"/>
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/btnJogador3"
-                android:layout_gravity="center" />
-
-        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/tvResultado"
             android:textAlignment="center"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="20dp"/>
 
     </LinearLayout>
 

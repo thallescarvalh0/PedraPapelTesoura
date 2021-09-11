@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/PosGraduacao/PedraPapelTesoura/app/src/main/res/layout-land/activity_main.xml" value="0.3441441441441441" />
+        <entry key="..\:/PosGraduacao/PedraPapelTesoura/app/src/main/res/layout/activity_editar_opcoes.xml" value="0.33" />
         <entry key="..\:/PosGraduacao/PedraPapelTesoura/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/PosGraduacao/PedraPapelTesoura/app/src/main/res/layout/main_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/PosGraduacao/PedraPapelTesoura/app/src/main/res/menu/menu_main.xml" value="0.22" />
       </map>
     </option>
   </component>

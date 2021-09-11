@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    tools:context=".EditarOpcoesActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSelecioneRodadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/qtde_de_rodadas"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgRodadas"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rbUmaRodada"
+            android:text="@string/_1_rodada"
+            android:layout_weight="1"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rbTresRodadas"
+            android:text="@string/_3_rodadas"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rbCincoRodadas"
+            android:text="@string/_5_rodadas"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSelecioneJogadores"
+        android:text="@string/qtde_de_jogadores"
+        android:layout_marginBottom="5dp"
+        android:textSize="14sp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgJogadores"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rbDoisJogadores"
+            android:text="@string/dois_jogadores"
+            android:layout_weight="1"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rbTresJogadores"
+            android:text="@string/tres_jogadores"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnSalvar"
+        android:text="@string/salvar"/>
+
+</LinearLayout>
+
