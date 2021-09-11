@@ -22,7 +22,6 @@ nobile@ifsp.edu.br
 # Entrega
   A entrega deve ser feita por meio do compartilhamento do repositório Git até a data estipulada no ambiente da disciplina. Além do código do projeto, o repositório deve conter um pequeno vídeo que demonstre o jogo sendo executado. 
 
-https://user-images.githubusercontent.com/22308517/131435415-bad3d9b4-b029-40ab-affd-27acba3f6f28.mp4
 
 
 
